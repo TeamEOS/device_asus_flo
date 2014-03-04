@@ -38,6 +38,6 @@
 /dev/qseecom              0660   system     drmrpc
 /dev/diag                 0660   radio      radio
 /dev/mdm                  0660   system     radio
-/dev/gss                  0660   system     gps
+/dev/gss                  0660   gps        gps
 /dev/ks_hsic_bridge       0660   system     system
 /dev/efs_hsic_bridge      0660   system     system
