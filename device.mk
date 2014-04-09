@@ -39,4 +39,7 @@ $(call inherit-product, device/asus/flo/device-common.mk)
 # inherit from the non-open-source side, if present
 $(call inherit-product-if-exists, vendor/asus/flo/flo-vendor.mk)
 
+# inherit from the EOS vendor, if present
+$(call inherit-product-if-exists, vendor/eos/config/common_full_tablet_wifionly.mk)
+
 DEVICE_PACKAGE_OVERLAYS := device/asus/flo/overlay
