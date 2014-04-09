@@ -16,3 +16,9 @@
 $(call inherit-product, device/asus/flo/aosp_flo.mk)
 
 PRODUCT_NAME := full_flo
+
+# Boot animation
+TARGET_SCREEN_HEIGHT := 1920
+TARGET_SCREEN_WIDTH := 1080
+
+BOOTANIMATION_RESOLUTION := 1920x1080
