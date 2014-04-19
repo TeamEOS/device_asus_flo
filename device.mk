@@ -42,4 +42,8 @@ $(call inherit-product-if-exists, vendor/asus/flo/flo-vendor.mk)
 # inherit from the EOS vendor, if present
 $(call inherit-product-if-exists, vendor/eos/config/common_full_tablet_wifionly.mk)
 
+# Copy Bootanimation
+PRODUCT_COPY_FILES += \
+vendor/eos/prebuilt/common/bootanimation/1080.zip:system/media/bootanimation.zip
+
 DEVICE_PACKAGE_OVERLAYS := device/asus/flo/overlay
