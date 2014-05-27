@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Nexus 7 (2013) Settings</string>
+
+    <!-- Touchscreen controls -->
+    <string name="category_touchscreen_title">Touchscreen features</string>
+    <string name="s2w_checkbox">Sweep2Wake</string>
+    <string name="s2w_summary">Do a swipe to wake your device</string>
+    <string name="dt2w_checkbox">DoubleTap2Wake</string>
+    <string name="dt2w_summary">Double tap to wake your device</string>
+
+</resources>

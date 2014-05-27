@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:key="category_touchscreen"
+        android:title="@string/category_touchscreen_title">
+        <CheckBoxPreference
+            android:key="s2w"
+            android:persistent="false"
+            android:title="@string/s2w_checkbox"
+            android:summary="@string/s2w_summary"
+            android:defaultValue="false" />
+	
+	    <CheckBoxPreference
+            android:key="dt2w"
+            android:persistent="false"
+            android:title="@string/dt2w_checkbox"
+            android:summary="@string/dt2w_summary"
+            android:defaultValue="false" />
+
+    </PreferenceCategory>
+</PreferenceScreen>

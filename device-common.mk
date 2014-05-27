@@ -270,6 +270,10 @@ PRODUCT_PACKAGES += \
     NfcNci \
     Tag
 
+# FloParts
+PRODUCT_PACKAGES += \
+    FloParts
+
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml \
     frameworks/native/data/etc/android.hardware.nfc.hce.xml:system/etc/permissions/android.hardware.nfc.hce.xml \
