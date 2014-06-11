@@ -30,7 +30,7 @@ public class Startup extends BroadcastReceiver {
 		if (Intent.ACTION_BOOT_COMPLETED.equals(action)) {
 			S2w.restore(context);
 			Dt2w.restore(context);
-		} else if ("com.cfx.settings.device.FloParts.feature_changed"
+		} else if ("org.eos.settings.device.FloParts.feature_changed"
 				.equals(action)) {
 			if (bootintent.getStringExtra("feature_s2w") != null) {
 				SharedPreferences sharedPrefs = PreferenceManager

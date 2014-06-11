@@ -52,20 +52,13 @@ public class DevicePreferenceActivity extends PreferenceFragment {
         context = getActivity().getApplication();
 
         mS2w = (CheckBoxPreference) findPreference(KEY_S2W);
-        //mS2w.setChecked(S2w.isEnabled());
+        mS2w.setChecked(S2w.isEnabled());
         mS2w.setEnabled(S2w.isSupported());
         
         mDt2w = (CheckBoxPreference) findPreference(KEY_DT2W);
-        //mDt2w.setChecked(Dt2w.isEnabled());
+        mDt2w.setChecked(Dt2w.isEnabled());
         mDt2w.setEnabled(Dt2w.isSupported());
 
-    }
-
-    @Override
-    public void onStart() {
-    	super.onStart();
-        mS2w.setChecked(S2w.isEnabled());
-        mDt2w.setChecked(Dt2w.isEnabled());
     }
 
 	@Override

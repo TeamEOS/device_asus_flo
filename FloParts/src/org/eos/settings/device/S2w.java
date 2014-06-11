@@ -43,18 +43,15 @@ public class S2w {
             return;
         SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);
         if (sharedPrefs.getBoolean(DevicePreferenceActivity.KEY_S2W, false))
-            //Utils.writeValue(S2W, "1");
-	    RunRootCommand.cmd("echo 1 > /sys/android_touch/sweep2wake");
-        else
-            //Utils.writeValue(S2W, "0");
-	    RunRootCommand.cmd("echo 0 > /sys/android_touch/sweep2wake");
+            Utils.writeValue(S2W, "1\n");
+	    else
+            Utils.writeValue(S2W, "0\n");
     }
 
     public static void enable(Context context) {
         if (!isSupported())
             return;
-        //Utils.writeValue(S2W, "1");
-	RunRootCommand.cmd("echo 1 > /sys/android_touch/sweep2wake");
+        Utils.writeValue(S2W, "1\n");
         SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);
         SharedPreferences.Editor editor = sharedPrefs.edit();
         editor.putBoolean(DevicePreferenceActivity.KEY_S2W, true);
@@ -64,8 +61,7 @@ public class S2w {
     public static void disable(Context context) {
         if (!isSupported())
             return;
-        //Utils.writeValue(S2W, "0");
-	RunRootCommand.cmd("echo 0 > /sys/android_touch/sweep2wake");
+        Utils.writeValue(S2W, "0\n");
         SharedPreferences sharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);
         SharedPreferences.Editor editor = sharedPrefs.edit();
         editor.putBoolean(DevicePreferenceActivity.KEY_S2W, false);
