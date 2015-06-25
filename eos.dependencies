@@ -1,0 +1,10 @@
+[
+ {
+   "repository": "kernel_google_msm",
+   "target_path": "kernel/google/msm"
+ },
+ {
+   "repository": "vendor_asus",
+   "target_path": "vendor/asus"
+ }
+]
