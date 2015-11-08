@@ -20,5 +20,8 @@ PRODUCT_BRAND := google
 PRODUCT_MODEL := EOS on Nexus 7
 PRODUCT_MANUFACTURER := asus
 
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=razor BUILD_FINGERPRINT=google/razor/flo:5.1.1/LMY47V/1836172:user/release-keys PRIVATE_BUILD_DESC="razor-user 5.1.1 LMY47V 1836172 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    PRODUCT_NAME=razor \
+    BUILD_FINGERPRINT=google/razor/flo:6.0/MRA58V/2324235:user/release-keys \
+    PRIVATE_BUILD_DESC="razor-user 6.0 MRA58V 2324235 release-keys"
 
