@@ -4,6 +4,10 @@
    "target_path": "kernel/google/msm"
  },
  {
+   "repository": "external_stlport",
+   "target_path": "external/stlport"
+ },
+ {
    "repository": "vendor_asus",
    "target_path": "vendor/asus"
  }
